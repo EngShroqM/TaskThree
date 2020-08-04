@@ -162,7 +162,7 @@
 				  </tr>
 				  <tr>
 					<td><label>Right</label></td>
-					<td><input disabled="disabled" type="text" name="dRight" value="<?php echo $B; ?>"></td>
+					<td><input disabled="disabled" type="text" name="dRight" value="<?php echo $R; ?>"></td>
 				  </tr>
 				  <tr>
 					<td><label>Left</label></td>
@@ -170,7 +170,7 @@
 				  </tr>
 				  <tr>
 					<td><label>Backward</label></td>
-					<td><input disabled="disabled" type="text" name="dBackward" value="<?php echo $R; ?>"></td>
+					<td><input disabled="disabled" type="text" name="dBackward" value="<?php echo $B; ?>"></td>
 				  </tr>
 				</tbody>
 			</table>
@@ -217,8 +217,8 @@
 							ctx.moveTo(0, 10);
 							ctx.lineTo(<?php echo $F; ?>, 10 );
 							ctx.lineTo(<?php echo $F; ?>, 10+<?php echo $R; ?>);
-							ctx.lineTo(<?php echo $L; ?>, 10+<?php echo $R; ?>);
-							ctx.lineTo(<?php echo $L; ?>, 10+<?php echo $B; ?>);
+							ctx.lineTo(<?php echo $F; ?>+<?php echo $L; ?>, 10+<?php echo $R; ?>);
+							ctx.lineTo(<?php echo $L; ?>+<?php echo $F; ?>, 10+<?php echo $R; ?>+<?php echo $B; ?>);
 							ctx.stroke();
 						  
 					</script
